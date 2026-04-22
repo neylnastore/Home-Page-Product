@@ -1,1 +1,655 @@
-sddd
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neylna Store | Official Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #4d52ff;
+            --secondary: #313496;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            background-color: #ffffff;
+            color: #0f172a;
+            overflow-x: hidden;
+        }
+        .swiper { width: 100%; height: 100%; }
+        .swiper-slide { position: relative; overflow: hidden; }
+        .hero-overlay { background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%); }
+        
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 24px;
+        }
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px -12px rgba(0,0,0,0.15);
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s;
+            border-radius: 12px;
+        }
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px var(--primary);
+        }
+        .badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-up { animation: fadeInUp 0.8s ease forwards; }
+    </style>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    
+    <div class="bg-[var(--primary)] text-white py-2.5 px-4 text-center text-[11px] font-black uppercase tracking-[0.2em] relative z-[60]">
+        Nikmati Penawaran Eksklusif Musim Ini. Belanja Sekarang.
+    </div>
+    
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-4">
+                    <img src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store" class="h-10 w-auto object-contain">
+                    <span class="text-2xl font-black tracking-tighter uppercase italic leading-none">Neylna Store</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-10">
+                    <a href="#" class="text-[11px] font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">Home</a>
+                    
+                        <a href="#cat-bpcq07fbo" class="text-[11px] font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">Fashion Muslimah</a>
+                    
+                        <a href="#cat-ekwey7o0c" class="text-[11px] font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">Pakaian Dalam Wanita</a>
+                    
+                        <a href="#cat-brsok731k" class="text-[11px] font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">Dompet & Tas</a>
+                    
+                        <a href="#cat-ngsoxqk3f" class="text-[11px] font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors"></a>
+                    
+                </div>
+                <div class="flex items-center gap-6">
+                    <button class="hover:text-[var(--primary)] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="swiper heroSwiper h-[70vh] sm:h-[85vh]">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <img src="https://cdn.orderonline.id/uploads/images_1658941776861691724.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 hero-overlay flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <h2 class="text-white text-4xl sm:text-7xl font-black uppercase italic tracking-tight leading-[0.9] mb-6 animate-up">
+                                FASHION MUSLIM
+                            </h2>
+                            <p class="text-white/80 text-lg sm:text-xl font-medium mb-10 animate-up" style="animation-delay: 0.1s">
+                                PROMO UNTUK SEMUA ITEM
+                            </p>
+                            <a href="#cat-bpcq07fbo" class="inline-block bg-white text-black px-10 py-4 rounded-full font-black text-xs uppercase tracking-[0.2em] hover:bg-[var(--primary)] hover:text-white transition-all animate-up shadow-2xl" style="animation-delay: 0.2s">
+                                LIHAT KOLEKSI
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://cdn.orderonline.id/uploads/images_9349941776861692741.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 hero-overlay flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <h2 class="text-white text-4xl sm:text-7xl font-black uppercase italic tracking-tight leading-[0.9] mb-6 animate-up">
+                                PAKAIAN DALAM WANITA
+                            </h2>
+                            <p class="text-white/80 text-lg sm:text-xl font-medium mb-10 animate-up" style="animation-delay: 0.1s">
+                                PROMO UNTUK SEMUA ITEM
+                            </p>
+                            <a href="#cat-ekwey7o0c" class="inline-block bg-white text-black px-10 py-4 rounded-full font-black text-xs uppercase tracking-[0.2em] hover:bg-[var(--primary)] hover:text-white transition-all animate-up shadow-2xl" style="animation-delay: 0.2s">
+                                LIHAT KOLEKSI
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://cdn.orderonline.id/uploads/images_3114921776861573922.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 hero-overlay flex items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="max-w-2xl">
+                            <h2 class="text-white text-4xl sm:text-7xl font-black uppercase italic tracking-tight leading-[0.9] mb-6 animate-up">
+                                DOMPET & TAS
+                            </h2>
+                            <p class="text-white/80 text-lg sm:text-xl font-medium mb-10 animate-up" style="animation-delay: 0.1s">
+                                PROMO UNTUK SEMUA ITEM
+                            </p>
+                            <a href="#cat-brsok731k" class="inline-block bg-white text-black px-10 py-4 rounded-full font-black text-xs uppercase tracking-[0.2em] hover:bg-[var(--primary)] hover:text-white transition-all animate-up shadow-2xl" style="animation-delay: 0.2s">
+                                LIHAT KOLEKSI
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next !text-white !w-12 !h-12 after:!text-xl bg-black/20 backdrop-blur-md rounded-full"></div>
+        <div class="swiper-button-prev !text-white !w-12 !h-12 after:!text-xl bg-black/20 backdrop-blur-md rounded-full"></div>
+    </div>
+
+    <!-- Brand Story -->
+    
+    <section class="py-24 sm:py-32 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="inline-block p-3 bg-[var(--primary)]/10 rounded-2xl mb-8 text-[var(--primary)]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase italic tracking-tighter mb-10">Our Story</h2>
+            <p class="text-xl sm:text-2xl font-medium leading-relaxed opacity-80 italic">
+                "Neyna Store Official menghadirkan esensi keanggunan sejati bagi wanita modern. Berdedikasi pada detail presisi dan material premium, setiap koleksi kami dirancang untuk memancarkan kepercayaan diri yang abadi. Kami percaya bahwa keindahan bukan sekadar penampilan, melainkan sebuah pernyataan karakter yang elegan dan penuh martabat dalam setiap langkah Anda."
+            </p>
+        </div>
+    </section>
+    
+
+    <!-- Flash Sale -->
+    
+
+    <!-- Best Sellers -->
+    
+    <section class="py-24 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center text-center mb-16">
+                <span class="text-[var(--primary)] text-xs font-black uppercase tracking-[0.4em] mb-4">Top Rated</span>
+                <h2 class="text-4xl sm:text-6xl font-black italic uppercase tracking-tighter mb-6">Best Sellers</h2>
+                <div class="w-24 h-2 bg-[var(--primary)] rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://cdn.orderonline.id/uploads/images_2459851775555927108.jpeg" alt="Pashmina Instant AUREL" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Pashmina Instant AUREL</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 167000</span>
+                    
+                </div>
+                <a href="https://pashmina-instan-aurel.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://img.bdjkt.com/img/600/tvgfli0tw8mjenhw/CpkEnL2OaV3KiKZCpR75qFDYvZOd6LQmOl12H8CkDWg.webp" alt="Hijab Dagu Khimar Salma" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Hijab Dagu Khimar Salma</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 155000</span>
+                    
+                </div>
+                <a href="https://hijab-khimar-salma.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-81zti-mfqxvjwpw4ju74@resize_w900_nl.webp" alt="Aulia Dress" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Aulia Dress</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 275000</span>
+                    
+                </div>
+                <a href="https://aulia-dress.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mdn1xj2bwtxr74@resize_w450_nl.webp" alt="Comfortable Seamless Bra" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Comfortable Seamless Bra</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 163000</span>
+                    
+                </div>
+                <a href="https://comfortable-seamless-bra.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Categories -->
+    <div id="all-products" class="space-y-12 pb-24">
+        
+            <section id="cat-bpcq07fbo" class="py-20 bg-white dark:bg-slate-950">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[var(--primary)] text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">Collection 1</span>
+                            <h2 class="text-3xl sm:text-5xl font-black italic uppercase tracking-tighter">Fashion Muslimah</h2>
+                        </div>
+                        <a href="#" class="group flex items-center gap-3 text-xs font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">
+                            View All 
+                            <span class="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:translate-x-2 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                        
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://cdn.orderonline.id/uploads/images_2459851775555927108.jpeg" alt="Pashmina Instant AUREL" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Pashmina Instant AUREL</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 167000</span>
+                    
+                </div>
+                <a href="https://pashmina-instan-aurel.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-8224t-ml63kyv284qr51@resize_w450_nl.webp" alt="Pashmina Instant Belvina" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Pashmina Instant Belvina</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 155000</span>
+                    
+                </div>
+                <a href="https://pashmina-instant-belvina.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztc-me1nx65v3rbae0@resize_w450_nl.webp" alt="Hijab Instan Lipit Turki" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Hijab Instan Lipit Turki</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 155000</span>
+                    
+                </div>
+                <a href="https://hijab-instan-lipit-turki.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://img.bdjkt.com/img/600/tvgfli0tw8mjenhw/CpkEnL2OaV3KiKZCpR75qFDYvZOd6LQmOl12H8CkDWg.webp" alt="Hijab Dagu Khimar Salma" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Hijab Dagu Khimar Salma</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 155000</span>
+                    
+                </div>
+                <a href="https://hijab-khimar-salma.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-81zti-mfqxvjwpw4ju74@resize_w900_nl.webp" alt="Aulia Dress" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Aulia Dress</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 275000</span>
+                    
+                </div>
+                <a href="https://aulia-dress.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk0-m8zkxftgo4jm32@resize_w900_nl.webp" alt="Zallia Dress" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Zallia Dress</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 299000</span>
+                    
+                </div>
+                <a href="https://zallia-dress.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+                    </div>
+                </div>
+            </section>
+        
+            <section id="cat-ekwey7o0c" class="py-20 bg-slate-50 dark:bg-slate-900/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[var(--primary)] text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">Collection 2</span>
+                            <h2 class="text-3xl sm:text-5xl font-black italic uppercase tracking-tighter">Pakaian Dalam Wanita</h2>
+                        </div>
+                        <a href="#" class="group flex items-center gap-3 text-xs font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">
+                            View All 
+                            <span class="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:translate-x-2 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                        
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-8224t-mhcvgbfdx1qg19@resize_w450_nl.webp" alt="1 Set Push Up BRA + Seamless CD" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">1 Set Push Up BRA + Seamless CD</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 239000</span>
+                    
+                </div>
+                <a href="https://bra-premium-seamless-cd.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mdn1xj2bwtxr74@resize_w450_nl.webp" alt="Comfortable Seamless Bra" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Comfortable Seamless Bra</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 163000</span>
+                    
+                </div>
+                <a href="https://comfortable-seamless-bra.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://clothmoren.com/cdn/shop/files/spp_20241210100031_a6bc62381f326dfd4c08368da5746fda_3869bb6f-f583-4dbf-b84b-f53b0e80bbf6.jpg?v=1748507342&width=493" alt="Push Up BRA Model Pita" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Push Up BRA Model Pita</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 174999</span>
+                    
+                </div>
+                <a href="https://push-up-band-bra.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+                    </div>
+                </div>
+            </section>
+        
+            <section id="cat-brsok731k" class="py-20 bg-white dark:bg-slate-950">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[var(--primary)] text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">Collection 3</span>
+                            <h2 class="text-3xl sm:text-5xl font-black italic uppercase tracking-tighter">Dompet & Tas</h2>
+                        </div>
+                        <a href="#" class="group flex items-center gap-3 text-xs font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">
+                            View All 
+                            <span class="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:translate-x-2 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                        
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://cdn.hotishop.com/image/507ae409b76c520aeb4afc928bf332385b71e419.jpeg" alt="TRENDY SHOULDER BAG" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">TRENDY SHOULDER BAG</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 185000</span>
+                    
+                </div>
+                <a href="https://trendy-bag.importan.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://cdn.orderonline.id/uploads/images_3457301759237039319.png" alt="ALLETA CANVAS BAG" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">ALLETA CANVAS BAG</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 155000</span>
+                    
+                </div>
+                <a href="https://alleta-canvas-bag.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://cdn.hotishop.com/image/8c565b0ada97c7753a4e09235b7f365927f9b57f-400.jpeg" alt="Lightweight Puffy Totebag" class="w-full h-full object-cover">
+            <div class="absolute top-3 left-3 badge">Best Seller</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">Lightweight Puffy Totebag</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 198000</span>
+                    
+                </div>
+                <a href="https://lightweight-puffy-totebag.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="product-card  bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col h-full">
+        <div class="relative aspect-square overflow-hidden">
+            <img src="https://cdn.orderonline.id/uploads/images_1434501758213950898.png" alt="MECCA DOMPET SOLUTIF" class="w-full h-full object-cover">
+            
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+            <h3 class="font-bold text-sm mb-2 line-clamp-2">MECCA DOMPET SOLUTIF</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-lg font-black" style="color: var(--primary)">Rp 149000</span>
+                    
+                </div>
+                <a href="https://mecca-dompet-solutif.neylnastore.my.id/" target="_blank" class="block w-full text-center py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+  
+                    </div>
+                </div>
+            </section>
+        
+            <section id="cat-ngsoxqk3f" class="py-20 bg-slate-50 dark:bg-slate-900/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-end justify-between mb-12">
+                        <div>
+                            <span class="text-[var(--primary)] text-[10px] font-black uppercase tracking-[0.3em] mb-2 block">Collection 4</span>
+                            <h2 class="text-3xl sm:text-5xl font-black italic uppercase tracking-tighter"></h2>
+                        </div>
+                        <a href="#" class="group flex items-center gap-3 text-xs font-black uppercase tracking-widest hover:text-[var(--primary)] transition-colors">
+                            View All 
+                            <span class="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:translate-x-2 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                        
+                    </div>
+                </div>
+            </section>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-4 mb-8">
+                        <img src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store" class="h-12 w-auto object-contain brightness-0 invert">
+                        <span class="text-3xl font-black tracking-tighter uppercase italic">Neylna Store</span>
+                    </div>
+                    <p class="text-slate-400 text-lg leading-relaxed max-w-md mb-10">
+                        Neyna Store Official menghadirkan esensi keanggunan sejati bagi wanita modern. Berdedikasi pada detail presisi dan material premium, setiap koleksi kami dirancang untuk memancarkan kepercayaan diri yang abadi. Kami percaya bahwa keindahan bukan sekadar penampilan, melainkan sebuah pernyataan karakter yang elegan dan penuh martabat dalam setiap langkah Anda.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/neylnastore/" class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                        
+                        <a href="https://www.facebook.com/profile.php?id=61556452119950&locale=id_ID" class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-[var(--primary)]">Collections</h4>
+                    <ul class="space-y-4 text-slate-400 font-bold">
+                        <li><a href="#cat-bpcq07fbo" class="hover:text-white transition-colors">Fashion Muslimah</a></li><li><a href="#cat-ekwey7o0c" class="hover:text-white transition-colors">Pakaian Dalam Wanita</a></li><li><a href="#cat-brsok731k" class="hover:text-white transition-colors">Dompet & Tas</a></li><li><a href="#cat-ngsoxqk3f" class="hover:text-white transition-colors"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-[var(--primary)]">Customer Care</h4>
+                    <ul class="space-y-4 text-slate-400 font-bold">
+                        <li><a href="#" class="hover:text-white transition-colors">Track Order</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Returns & Exchanges</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
+                    © 2024 Neylna Store. All Rights Reserved.
+                </p>
+                <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.heroSwiper', {
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            effect: 'fade',
+            fadeEffect: { crossFade: true }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(targetId);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
